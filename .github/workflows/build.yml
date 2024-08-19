@@ -1,0 +1,23 @@
+name: Build APP
+
+on:
+  push:
+  pull_request:
+  release:
+    types: [published]
+
+jobs:
+
+  ubuntu_20_build:
+    name: Ubuntu 20.04
+    runs-on: ubuntu-20.04
+    env:
+      LABEL: ubuntu
+    steps:
+      - uses: actions/checkout@v4
+
+      # Download Dependences
+      - name: Download Dependences
+      - run: |
+          yarn install
+    

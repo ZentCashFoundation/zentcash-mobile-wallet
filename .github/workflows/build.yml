@@ -19,7 +19,7 @@ jobs:
       # Download Dependences
       - name: Download Dependences
         run: |
-          yarn install
+          yarn update
           cd node_modules
           ls -la
     

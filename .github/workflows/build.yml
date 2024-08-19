@@ -20,4 +20,6 @@ jobs:
       - name: Download Dependences
         run: |
           yarn install
+          cd node_modules
+          ls -la
     

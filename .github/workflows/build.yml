@@ -18,6 +18,6 @@ jobs:
 
       # Download Dependences
       - name: Download Dependences
-      - run: |
+        run: |
           yarn install
     

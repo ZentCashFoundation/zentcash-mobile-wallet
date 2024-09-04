@@ -203,7 +203,7 @@ export class DisableDozeScreen extends React.Component {
     }
 
     async updateDozeStatus() {
-        const dozeDisabled = await NativeModules.TurtleCoin.isDozeDisabled();
+        const dozeDisabled = await NativeModules.ZentCash.isDozeDisabled();
 
         this.setState({
             dozeDisabled,
@@ -269,7 +269,7 @@ export class DisableDozeScreen extends React.Component {
                                 color: '#3399ff',
                                 fontSize: 16,
                             }}
-                            onPress={() => NativeModules.TurtleCoin.navigateToBatteryOptimizationScreen()}
+                            onPress={() => NativeModules.ZentCash.navigateToBatteryOptimizationScreen()}
                         >
                             Click here to open the Battery optimization menu.
                         </Text>

@@ -44,14 +44,6 @@ jobs:
           cat node_modules/metro-cache/src/stableHash.js
           yarn postinstall
 
-      # Hack Metro
-      - name: Hack Metro
-        run: |
-          cat node_modules/metro-cache/src/stableHash.js
-          cd  node_modules/metro-cache/src/
-          chmod 777 stableHash.js
-          sed -i 's/md4/md5/g' stableHash.js
-
       # Download Command Line Tools SDK
       - name: Download Command Line Tools SDK
         run: |  

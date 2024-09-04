@@ -99,7 +99,10 @@ const Config = new function() {
         new MixinLimit(11000, 0, 3, 0),
 
         /* At height of 150000, static mixin of 3 */
-        new MixinLimit(150000, 3),
+        new MixinLimit(150000, 3, 3, 3),
+        
+        /* At height of 150000 */
+        new MixinLimit(2600000, 1, 3, 1),        
     ], 3 /* Default mixin */);
 
     /**
@@ -188,7 +191,7 @@ const Config = new function() {
     /**
      * Default daemon to use.
      */
-    this.defaultDaemon = new Daemon('seedpro1.zent.cash', 21698, false, false);
+    this.defaultDaemon = new Daemon('185.74.222.212', 21698, false, false);
 
     /**
      * A link to where a bug can be reported for your wallet. Please update
@@ -232,7 +235,7 @@ const Config = new function() {
     /**
      * A url to fetch node info from
      */
-    this.nodeListURL = 'https://raw.githubusercontent.com/ZentCashDevelopers/zentcash-mobile-nodes-json/master/zentcash-mobile-nodes.json';
+    this.nodeListURL = 'https://raw.githubusercontent.com/ZentCashFoundation/zentcash-nodes-json/master/zentcash-mobile-nodes.json';
 };
 
 module.exports = Config;

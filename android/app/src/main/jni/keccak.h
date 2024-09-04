@@ -1,6 +1,6 @@
 // keccak.h
 // 19-Nov-11  Markku-Juhani O. Saarinen <mjos@iki.fi>
-// Copyright (c) 2018, The TurtleCoin Developers
+// Copyright (c) 2018, The ZentCash Developers
 //
 // Please see the included LICENSE file for more information.
 

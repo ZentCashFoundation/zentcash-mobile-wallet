@@ -1,15 +1,12 @@
-// Copyright (C) 2021, Zent Cash Foundation
+// Copyright (C) 2024, Zent Cash Foundation
 //
 // Please see the included LICENSE file for more information.
 
 import './shim';
 
 import { AppRegistry } from 'react-native';
-
 import BackgroundFetch from 'react-native-background-fetch';
-
 import { name as appName } from './app.json';
-
 import App from './src/App';
 import { initSentry } from './src/Sentry';
 import { Globals } from './src/Globals';

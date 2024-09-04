@@ -1,6 +1,6 @@
-package com.tonchan;
+package cash.zent.mobileapp;
 
-import com.tonchan.BuildConfig;
+import cash.zent.mobileapp.BuildConfig;
 
 import android.app.Application;
 import android.content.Intent;
@@ -16,7 +16,7 @@ import com.facebook.react.modules.network.OkHttpClientFactory;
 import com.facebook.react.modules.network.OkHttpClientProvider;
 import com.facebook.soloader.SoLoader;
 
-import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
+
 
 import com.transistorsoft.rnbackgroundfetch.RNBackgroundFetchPackage;
 
@@ -46,7 +46,7 @@ public class MainApplication extends Application implements ReactApplication {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       // Packages that cannot be autolinked yet can be added manually here
       packages.add(new RNBackgroundFetchPackage());
-      packages.add(new TurtleCoinPackage());
+      packages.add(new ZentCashPackage());
       return packages;
     }
 
@@ -67,7 +67,7 @@ public class MainApplication extends Application implements ReactApplication {
     upgradeSecurityProvider();
 
     /* tonchan-vx.x.x */
-    setUserAgent("tonchan-v1.2.3");
+    setUserAgent("zentcash-mobile-wallet-v1.2.3");
 
     SoLoader.init(this, /* native exopackage */ false);
   }

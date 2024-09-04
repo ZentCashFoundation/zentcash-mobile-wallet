@@ -1,4 +1,4 @@
-package com.tonchan;
+package cash.zent.mobileapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.PowerManager;
 import android.provider.Settings;
 import android.util.Log;
 
-import com.tonchan.BuildConfig;
+import cash.zent.mobileapp.BuildConfig;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -27,19 +27,19 @@ import java.net.URL;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class TurtleCoinModule extends ReactContextBaseJavaModule {
+public class ZentCashModule extends ReactContextBaseJavaModule {
     static {
-        System.loadLibrary("TurtleCoin_jni");
+        System.loadLibrary("ZentCash_jni");
     }
 
-    public TurtleCoinModule(ReactApplicationContext reactContext) {
+    public ZentCashModule(ReactApplicationContext reactContext) {
         super(reactContext); //required by React Native
     }
 
-    /* Access this by doing NativeModules.TurtleCoin in react */
+    /* Access this by doing NativeModules.ZentCash in react */
     @Override
     public String getName() {
-        return "TurtleCoin";
+        return "ZentCash";
     }
 
     @ReactMethod
@@ -300,7 +300,7 @@ public class TurtleCoinModule extends ReactContextBaseJavaModule {
             connection.setRequestProperty("Accept", "application/json");
 
             /* tonchan-vx.x.x */
-            connection.setRequestProperty("User-Agent", "tonchan-v1.2.3");
+            connection.setRequestProperty("User-Agent", "zentcash-mobile-wallet-v1.2.3");
 
             /* Indicate we have a POST body */
             connection.setDoOutput(true);

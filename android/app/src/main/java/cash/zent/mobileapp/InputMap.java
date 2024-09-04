@@ -1,4 +1,4 @@
-package com.tonchan;
+package cash.zent.mobileapp;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableArray;
